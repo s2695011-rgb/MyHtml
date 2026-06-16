@@ -2,57 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 2-1: Lab Introduction</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1, h2 {
-            color: #005bac;
-        }
-        .img-container {
-            margin: 20px 0;
-        }
-        img {
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            text-decoration: none;
-            color: #005bac;
-        }
-    </style>
+    <title>Lab Introduction</title>
 </head>
 <body>
 
-    <h1>Research Introduction: Image Denoising</h1>
+    <p>
+        <a href="index.html">Home</a> | 
+        <a href="myself.html">About Me</a> | 
+        <a href="uec.html">My Impressions</a> | 
+        <a href="lab.html"><b>Lab Introduction</b></a> | 
+        <a href="cost.html">Cost of Living</a> | 
+        <a href="links.html">Favorite Links</a>
+    </p>
+    <hr size="1">
+
+    <h2>Research Introduction: Image Denoising</h2>
     <p>An overview of image denoising techniques based on frequency and thresholding.</p>
 
-    <div class="img-container">
+    <div>
         <img src="lab_photo.jpg" alt="Denoising Concept" width="450">
     </div>
 
-    <h2>1. What's the Problem & Objective?</h2>
+    <h3>1. What's the Problem & Objective?</h3>
     <ul>
         <li>The Problem: Traditional denoising methods are non-adaptive. When they remove random noise from a picture, they also blur out important features like sharp edges and local details.</li>
         <li>The Objective: To design a spatially-adaptive method. We want to perfectly wash away Gaussian noise, but at the same time, fully protect the sharp contours and details of the image.</li>
     </ul>
 
-    <h2>2. Frequency in Images</h2>
+    <h3>2. Frequency in Images</h3>
     <ul>
         <li>Low Frequency: Regions where colors change very slowly, representing large smooth areas (e.g., sky, walls, skin).</li>
         <li>High Frequency: Regions where colors change rapidly (e.g., cat whiskers, sand textures with shadows). Random Gaussian noise is also high frequency.</li>
     </ul>
 
-    <h2>3. Comparison of Methods</h2>
+    <h3>3. Comparison of Methods</h3>
     <ol>
         <li>
             Traditional Method (FFT Low-Pass Filter)
@@ -71,14 +54,21 @@
         </li>
     </ol>
 
-    <h2>4. Practical Applications</h2>
+    <h3>4. Practical Applications</h3>
     <ul>
         <li>Smartphone night photography.</li>
         <li>Medical scans like MRI and CT.</li>
         <li>Satellite pictures.</li>
     </ul>
 
-    <a class="back-link" href="menu.html">← Back to Main Menu</a>
+    <br>
+    <hr size="1">
+    <p><i>"The views and opinions expressed in this page are strictly those of the webpage author. The contents of this page have not been reviewed or approved by The University of Electro-Communications."</i></p>
+
+    <hr size="1">
+    <footer>
+        <p>&copy; 2026 Tim - Powered by UEC</p>
+    </footer>
 
 </body>
 </html>

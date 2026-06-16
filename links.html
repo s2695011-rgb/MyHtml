@@ -2,52 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 2-3: Favorite Links</title>
+    <title>Favorite Links</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-        }
-        
-        /* --- Link States Styling (L-V-H-A Order) --- */
-        /* 1. Unvisited link (Normal state) */
         a:link {
             color: #005bac;
             text-decoration: none;
-            font-weight: bold;
         }
-        /* 2. Visited link (Sites you have already clicked) */
         a:visited {
             color: #6a1b9a;
             text-decoration: none;
         }
-        /* 3. Hover state (When mouse is over the link) */
         a:hover {
             color: #d32f2f;
-            text-decoration: underline overline; /* Adds lines above and below */
+            text-decoration: underline overline;
         }
-        /* 4. Active state (The exact moment you click the link) */
         a:active {
             color: #388e3c;
         }
-
         li {
             margin: 15px 0;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
-    <h1>My Favorite Links Collection</h1>
+    <p>
+        <a href="index.html">Home</a> | 
+        <a href="myself.html">About Me</a> | 
+        <a href="uec.html">My Impressions</a> | 
+        <a href="lab.html">Lab Introduction</a> | 
+        <a href="cost.html">Cost of Living</a> | 
+        <a href="links.html"><b>Favorite Links</b></a>
+    </p>
+    <hr size="1">
+
+    <h2>My Favorite Links Collection</h2>
     <p>Move your mouse over the links or click them to see the CSS state changes.</p>
 
-    <!-- List of useful external links -->
     <ul>
         <li>
             <a href="https://buzzard.fedu.uec.ac.jp/iec/?redirect=0" target="_blank">The University of Electro-Communications (UEC)</a>
@@ -63,8 +54,14 @@
         </li>
     </ul>
 
-    <!-- Local link back to your menu home page -->
-    <a class="back-link" href="menu.html">← Back to Main Menu</a>
+    <br>
+    <hr size="1">
+    <p><i>"The views and opinions expressed in this page are strictly those of the webpage author. The contents of this page have not been reviewed or approved by The University of Electro-Communications."</i></p>
+
+    <hr size="1">
+    <footer>
+        <p>&copy; 2026 Tim - Powered by UEC</p>
+    </footer>
 
 </body>
 </html>

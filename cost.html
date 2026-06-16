@@ -2,58 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 2-2: Cost of Living Table</title>
+    <title>Cost of Living</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
         table {
             border-collapse: collapse;
             width: 90%;
-            margin-left: auto;
-            margin-right: auto; /* Centers the table */
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         th, td {
             border: 1px solid #333;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
         }
-        th {
-            background-color: #005bac; /* UEC Blue Theme */
-            color: white;
-        }
         tr:nth-child(odd) {
-            background-color: #f9f9f9; /* Zebra striping effect */
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            text-decoration: none;
-            color: #005bac;
-            font-weight: bold;
+            background-color: #f9f9f9;
         }
     </style>
 </head>
 <body>
 
-    <h1 style="text-align: center;">Cost of Living Comparison (in JPY)</h1>
-    <p style="text-align: center;">A detailed record of my personal monthly expenses in Taiwan vs. Japan.</p>
+    <p>
+        <a href="index.html">Home</a> | 
+        <a href="myself.html">About Me</a> | 
+        <a href="uec.html">My Impressions</a> | 
+        <a href="lab.html">Lab Introduction</a> | 
+        <a href="cost.html"><b>Cost of Living</b></a> | 
+        <a href="links.html">Favorite Links</a>
+    </p>
+    <hr size="1">
+
+    <h2>Cost of Living Comparison (in JPY)</h2>
+    <p>A detailed record of my personal monthly expenses in Taiwan vs. Japan.</p>
 
     <table>
-        <!-- Table Caption required by Task 2-2 -->
         <caption>Table 1.1: Personal Expenses in Taiwan (March) and Japan (May)</caption>
-        
         <tr>
             <th>Category</th>
             <th>Expense Item</th>
             <th>Taiwan (March)</th>
             <th>Japan (May)</th>
         </tr>
-
-        <!-- Food Category (Using rowspan to group 3 items) -->
         <tr>
-            <td rowspan="3"><b>Food</b></td>
+            <td rowspan="3">Food</td>
             <td>Breakfast</td>
             <td>2,067 JPY</td>
             <td>3,060 JPY</td>
@@ -68,10 +59,8 @@
             <td>5,511 JPY</td>
             <td>20,216 JPY</td>
         </tr>
-
-        <!-- Utilities Category (Using rowspan to group 2 items) -->
         <tr>
-            <td rowspan="2"><b>Utilities</b></td>
+            <td rowspan="2">Utilities</td>
             <td>Electricity</td>
             <td>-</td>
             <td>7,361 JPY</td>
@@ -81,10 +70,8 @@
             <td>-</td>
             <td>1,867 JPY</td>
         </tr>
-
-        <!-- Housing & Living Category (Using rowspan to group 3 items) -->
         <tr>
-            <td rowspan="3"><b>Housing & Living</b></td>
+            <td rowspan="3">Housing & Living</td>
             <td>Rent</td>
             <td>-</td>
             <td>23,700 JPY</td>
@@ -99,10 +86,8 @@
             <td>2,875 JPY</td>
             <td>20,713 JPY</td>
         </tr>
-
-        <!-- Transportation & Travel Category (Using rowspan to group 2 items) -->
         <tr>
-            <td rowspan="2"><b>Transportation & Travel</b></td>
+            <td rowspan="2">Transportation & Travel</td>
             <td>Local Transport</td>
             <td>1,398 JPY</td>
             <td>5,090 JPY</td>
@@ -112,10 +97,8 @@
             <td>10,655 JPY</td>
             <td>-</td>
         </tr>
-
-        <!-- Entertainment & Health Category (Using rowspan to group 2 items) -->
         <tr>
-            <td rowspan="2"><b>Entertainment & Health</b></td>
+            <td rowspan="2">Entertainment & Health</td>
             <td>Bar</td>
             <td>5,800 JPY</td>
             <td>-</td>
@@ -125,16 +108,21 @@
             <td>3,892 JPY</td>
             <td>-</td>
         </tr>
-
-        <!-- Total Cost Row (Using colspan to merge the first 2 columns) -->
-        <tr style="background-color: #fff9c4; font-weight: bold;">
+        <tr style="background-color: #fff9c4;">
             <td colspan="2">Total Monthly Expenses</td>
             <td>36,276 JPY</td>
             <td>91,083 JPY</td>
         </tr>
     </table>
 
-    <a class="back-link" href="menu.html">← Back to Main Menu</a>
+    <br>
+    <hr size="1">
+    <p><i>"The views and opinions expressed in this page are strictly those of the webpage author. The contents of this page have not been reviewed or approved by The University of Electro-Communications."</i></p>
+
+    <hr size="1">
+    <footer>
+        <p>&copy; 2026 Tim - Powered by UEC</p>
+    </footer>
 
 </body>
 </html>
