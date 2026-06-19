@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Lab Introduction</title>
+    <style>
+        body { background-color: #dfdfdf; font-family: 'Courier New', Courier, monospace; color: #000; padding: 20px; line-height: 1.6; }
+        p:first-of-type { background: #c0c0c0; padding: 10px; border-top: 2px solid #fff; border-left: 2px solid #fff; border-right: 2px solid #808080; border-bottom: 2px solid #808080; }
+        p a { color: #000 !important; text-decoration: none !important; background-color: #c0c0c0; padding: 4px 10px; margin: 0 5px; display: inline-block; border-top: 2px solid #fff; border-left: 2px solid #fff; border-right: 2px solid #808080; border-bottom: 2px solid #808080; font-weight: bold; }
+        p a:active { border-top: 2px solid #808080; border-left: 2px solid #808080; border-right: 2px solid #fff; border-bottom: 2px solid #fff; }
+        h2 { background-color: #000080; color: white; padding: 5px 10px; margin-top: 20px; font-size: 1.2em; }
+        img { background-color: #fff; padding: 15px 15px 45px 15px; border: 1px solid #ccc; box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3); transform: rotate(-1.5deg); transition: transform 0.3s ease; display: block; margin: 20px auto; }
+        img:hover { transform: rotate(0deg) scale(1.05); }
+        .disclaimer, footer { font-size: 0.85em; color: #555; margin-top: 30px; border-top: 1px solid #808080; padding-top: 10px; text-align: center; }
+    </style>
 </head>
 <body>
-
     <p>
         <a href="index.html">Home</a> | 
         <a href="myself.html">About Me</a> | 
@@ -14,61 +23,27 @@
         <a href="cost.html">Cost of Living</a> | 
         <a href="links.html">Favorite Links</a>
     </p>
-    <hr size="1">
-
     <h2>Research Introduction: Image Denoising</h2>
     <p>An overview of image denoising techniques based on frequency and thresholding.</p>
-
-    <div>
-        <img src="lab_photo.jpg" alt="Denoising Concept" width="450">
-    </div>
-
+    <div><img src="lab_photo.jpg" alt="Denoising Concept" width="450"></div>
     <h3>1. What's the Problem & Objective?</h3>
     <ul>
         <li>The Problem: Traditional denoising methods are non-adaptive. When they remove random noise from a picture, they also blur out important features like sharp edges and local details.</li>
         <li>The Objective: To design a spatially-adaptive method. We want to perfectly wash away Gaussian noise, but at the same time, fully protect the sharp contours and details of the image.</li>
     </ul>
-
     <h3>2. Frequency in Images</h3>
     <ul>
         <li>Low Frequency: Regions where colors change very slowly, representing large smooth areas (e.g., sky, walls, skin).</li>
         <li>High Frequency: Regions where colors change rapidly (e.g., cat whiskers, sand textures with shadows). Random Gaussian noise is also high frequency.</li>
     </ul>
-
     <h3>3. Comparison of Methods</h3>
     <ol>
-        <li>
-            Traditional Method (FFT Low-Pass Filter)
-            <ul>
-                <li>It removes noise by cutting off all high-frequency signals, so fine details like whiskers completely disappear.</li>
-                <li>Example: In a beach photo, it removes noise but makes the grainy texture of the sand disappear, turning it into a flat yellow block. For instance, sharp pixel differences like 242 and 38 become 140 after averaging, losing the original texture.</li>
-            </ul>
-        </li>
-        <li>
-            Modern Method (Wavelet Thresholding)
-            <ul>
-                <li>It separates the image into different sub-bands and applies Soft Thresholding. If a value is smaller than the threshold, it is erased to zero.</li>
-                <li>Example for a smooth wall: Minor differences from noise (like 197.5 vs 202.5) do not exceed the threshold, so they successfully become zero and get smoothed.</li>
-                <li>Example for sand/edges: Pixel differences remain massive due to lighting and shadows (like 242.75 vs 37.5). The difference greatly exceeds the threshold, so the crucial grainy texture and sharp contours are preserved after micro-adjustments.</li>
-            </ul>
-        </li>
+        <li>Traditional Method (FFT Low-Pass Filter)<ul><li>It removes noise by cutting off all high-frequency signals, so fine details like whiskers completely disappear.</li><li>Example: In a beach photo, it removes noise but makes the grainy texture of the sand disappear, turning it into a flat yellow block. For instance, sharp pixel differences like 242 and 38 become 140 after averaging, losing the original texture.</li></ul></li>
+        <li>Modern Method (Wavelet Thresholding)<ul><li>It separates the image into different sub-bands and applies Soft Thresholding. If a value is smaller than the threshold, it is erased to zero.</li><li>Example for a smooth wall: Minor differences from noise (like 197.5 vs 202.5) do not exceed the threshold, so they successfully become zero and get smoothed.</li><li>Example for sand/edges: Pixel differences remain massive due to lighting and shadows (like 242.75 vs 37.5). The difference greatly exceeds the threshold, so the crucial grainy texture and sharp contours are preserved after micro-adjustments.</li></ul></li>
     </ol>
-
     <h3>4. Practical Applications</h3>
-    <ul>
-        <li>Smartphone night photography.</li>
-        <li>Medical scans like MRI and CT.</li>
-        <li>Satellite pictures.</li>
-    </ul>
-
-    <br>
-    <hr size="1">
-    <p><i>"The views and opinions expressed in this page are strictly those of the webpage author. The contents of this page have not been reviewed or approved by The University of Electro-Communications."</i></p>
-
-    <hr size="1">
-    <footer>
-        <p>&copy; 2026 Tim - Powered by UEC</p>
-    </footer>
-
+    <ul><li>Smartphone night photography.</li><li>Medical scans like MRI and CT.</li><li>Satellite pictures.</li></ul>
+    <p class="disclaimer"><i>"The views and opinions expressed in this page are strictly those of the webpage author. The contents of this page have not been reviewed or approved by The University of Electro-Communications."</i></p>
+    <footer><p>&copy; 2026 Tim - Powered by UEC</p></footer>
 </body>
 </html>

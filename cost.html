@@ -4,24 +4,18 @@
     <meta charset="UTF-8">
     <title>Cost of Living</title>
     <style>
-        table {
-            border-collapse: collapse;
-            width: 90%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #333;
-            padding: 8px;
-            text-align: center;
-        }
-        tr:nth-child(odd) {
-            background-color: #f9f9f9;
-        }
+        body { background-color: #dfdfdf; font-family: 'Courier New', Courier, monospace; color: #000; padding: 20px; line-height: 1.6; }
+        p:first-of-type { background: #c0c0c0; padding: 10px; border-top: 2px solid #fff; border-left: 2px solid #fff; border-right: 2px solid #808080; border-bottom: 2px solid #808080; }
+        p a { color: #000 !important; text-decoration: none !important; background-color: #c0c0c0; padding: 4px 10px; margin: 0 5px; display: inline-block; border-top: 2px solid #fff; border-left: 2px solid #fff; border-right: 2px solid #808080; border-bottom: 2px solid #808080; font-weight: bold; }
+        p a:active { border-top: 2px solid #808080; border-left: 2px solid #808080; border-right: 2px solid #fff; border-bottom: 2px solid #fff; }
+        h2 { background-color: #000080; color: white; padding: 5px 10px; margin-top: 20px; font-size: 1.2em; }
+        table { border-collapse: collapse; width: 90%; margin-top: 20px; margin-bottom: 20px; background-color: #f1f1f1; border: 2px solid #808080; }
+        th { background-color: #000080; color: white; }
+        td, th { border: 1px solid #808080; padding: 8px; text-align: center; }
+        .disclaimer, footer { font-size: 0.85em; color: #555; margin-top: 30px; border-top: 1px solid #808080; padding-top: 10px; text-align: center; }
     </style>
 </head>
 <body>
-
     <p>
         <a href="index.html">Home</a> | 
         <a href="myself.html">About Me</a> | 
@@ -30,99 +24,26 @@
         <a href="cost.html"><b>Cost of Living</b></a> | 
         <a href="links.html">Favorite Links</a>
     </p>
-    <hr size="1">
-
     <h2>Cost of Living Comparison (in JPY)</h2>
     <p>A detailed record of my personal monthly expenses in Taiwan vs. Japan.</p>
-
     <table>
         <caption>Table 1.1: Personal Expenses in Taiwan (March) and Japan (May)</caption>
-        <tr>
-            <th>Category</th>
-            <th>Expense Item</th>
-            <th>Taiwan (March)</th>
-            <th>Japan (May)</th>
-        </tr>
-        <tr>
-            <td rowspan="3">Food</td>
-            <td>Breakfast</td>
-            <td>2,067 JPY</td>
-            <td>3,060 JPY</td>
-        </tr>
-        <tr>
-            <td>Lunch</td>
-            <td>4,078 JPY</td>
-            <td>8,076 JPY</td>
-        </tr>
-        <tr>
-            <td>Dinner</td>
-            <td>5,511 JPY</td>
-            <td>20,216 JPY</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Utilities</td>
-            <td>Electricity</td>
-            <td>-</td>
-            <td>7,361 JPY</td>
-        </tr>
-        <tr>
-            <td>Water</td>
-            <td>-</td>
-            <td>1,867 JPY</td>
-        </tr>
-        <tr>
-            <td rowspan="3">Housing & Living</td>
-            <td>Rent</td>
-            <td>-</td>
-            <td>23,700 JPY</td>
-        </tr>
-        <tr>
-            <td>Laundry</td>
-            <td>-</td>
-            <td>1,000 JPY</td>
-        </tr>
-        <tr>
-            <td>Shopping</td>
-            <td>2,875 JPY</td>
-            <td>20,713 JPY</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Transportation & Travel</td>
-            <td>Local Transport</td>
-            <td>1,398 JPY</td>
-            <td>5,090 JPY</td>
-        </tr>
-        <tr>
-            <td>Yilan Trip (2D1N)</td>
-            <td>10,655 JPY</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Entertainment & Health</td>
-            <td>Bar</td>
-            <td>5,800 JPY</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>Medical</td>
-            <td>3,892 JPY</td>
-            <td>-</td>
-        </tr>
-        <tr style="background-color: #fff9c4;">
-            <td colspan="2">Total Monthly Expenses</td>
-            <td>36,276 JPY</td>
-            <td>91,083 JPY</td>
-        </tr>
+        <tr><th>Category</th><th>Expense Item</th><th>Taiwan (March)</th><th>Japan (May)</th></tr>
+        <tr><td rowspan="3">Food</td><td>Breakfast</td><td>2,067 JPY</td><td>3,060 JPY</td></tr>
+        <tr><td>Lunch</td><td>4,078 JPY</td><td>8,076 JPY</td></tr>
+        <tr><td>Dinner</td><td>5,511 JPY</td><td>20,216 JPY</td></tr>
+        <tr><td rowspan="2">Utilities</td><td>Electricity</td><td>-</td><td>7,361 JPY</td></tr>
+        <tr><td>Water</td><td>-</td><td>1,867 JPY</td></tr>
+        <tr><td rowspan="3">Housing & Living</td><td>Rent</td><td>-</td><td>23,700 JPY</td></tr>
+        <tr><td>Laundry</td><td>-</td><td>1,000 JPY</td></tr>
+        <tr><td>Shopping</td><td>2,875 JPY</td><td>20,713 JPY</td></tr>
+        <tr><td rowspan="2">Transportation & Travel</td><td>Local Transport</td><td>1,398 JPY</td><td>5,090 JPY</td></tr>
+        <tr><td>Yilan Trip (2D1N)</td><td>10,655 JPY</td><td>-</td></tr>
+        <tr><td rowspan="2">Entertainment & Health</td><td>Bar</td><td>5,800 JPY</td><td>-</td></tr>
+        <tr><td>Medical</td><td>3,892 JPY</td><td>-</td></tr>
+        <tr style="background-color: #fff9c4;"><td colspan="2">Total Monthly Expenses</td><td>36,276 JPY</td><td>91,083 JPY</td></tr>
     </table>
-
-    <br>
-    <hr size="1">
-    <p><i>"The views and opinions expressed in this page are strictly those of the webpage author. The contents of this page have not been reviewed or approved by The University of Electro-Communications."</i></p>
-
-    <hr size="1">
-    <footer>
-        <p>&copy; 2026 Tim - Powered by UEC</p>
-    </footer>
-
+    <p class="disclaimer"><i>"The views and opinions expressed in this page are strictly those of the webpage author. The contents of this page have not been reviewed or approved by The University of Electro-Communications."</i></p>
+    <footer><p>&copy; 2026 Tim - Powered by UEC</p></footer>
 </body>
 </html>

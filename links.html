@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <title>Favorite Links</title>
     <style>
-        a:link {
-            color: #005bac;
-            text-decoration: none;
-        }
-        a:visited {
-            color: #6a1b9a;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #d32f2f;
-            text-decoration: underline overline;
-        }
-        a:active {
-            color: #388e3c;
-        }
-        li {
-            margin: 15px 0;
-        }
+        body { background-color: #dfdfdf; font-family: 'Courier New', Courier, monospace; color: #000; padding: 20px; line-height: 1.6; }
+        p:first-of-type { background: #c0c0c0; padding: 10px; border-top: 2px solid #fff; border-left: 2px solid #fff; border-right: 2px solid #808080; border-bottom: 2px solid #808080; }
+        
+        /* 導覽列的按鈕樣式 */
+        p a { color: #000 !important; text-decoration: none !important; background-color: #c0c0c0; padding: 4px 10px; margin: 0 5px; display: inline-block; border-top: 2px solid #fff; border-left: 2px solid #fff; border-right: 2px solid #808080; border-bottom: 2px solid #808080; font-weight: bold; }
+        p a:active { border-top: 2px solid #808080; border-left: 2px solid #808080; border-right: 2px solid #fff; border-bottom: 2px solid #fff; }
+        
+        h2 { background-color: #000080; color: white; padding: 5px 10px; margin-top: 20px; font-size: 1.2em; }
+        li { margin: 15px 0; }
+        
+        /* 列表中的超連結：保留老師要求的 CSS 四種狀態切換效果 */
+        ul li a:link { color: #005bac; text-decoration: none; }
+        ul li a:visited { color: #6a1b9a; text-decoration: none; }
+        ul li a:hover { color: #d32f2f; text-decoration: underline overline; }
+        ul li a:active { color: #388e3c; }
+        
+        .disclaimer, footer { font-size: 0.85em; color: #555; margin-top: 30px; border-top: 1px solid #808080; padding-top: 10px; text-align: center; }
     </style>
 </head>
 <body>
@@ -34,7 +33,6 @@
         <a href="cost.html">Cost of Living</a> | 
         <a href="links.html"><b>Favorite Links</b></a>
     </p>
-    <hr size="1">
 
     <h2>My Favorite Links Collection</h2>
     <p>Move your mouse over the links or click them to see the CSS state changes.</p>
@@ -54,11 +52,8 @@
         </li>
     </ul>
 
-    <br>
-    <hr size="1">
-    <p><i>"The views and opinions expressed in this page are strictly those of the webpage author. The contents of this page have not been reviewed or approved by The University of Electro-Communications."</i></p>
+    <p class="disclaimer"><i>"The views and opinions expressed in this page are strictly those of the webpage author. The contents of this page have not been reviewed or approved by The University of Electro-Communications."</i></p>
 
-    <hr size="1">
     <footer>
         <p>&copy; 2026 Tim - Powered by UEC</p>
     </footer>
